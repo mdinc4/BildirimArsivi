@@ -3,15 +3,17 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
-
+// Yeni import
+import AllNotifications from './AllNotifications';
 // Her bir sekme için ayrı bir bileşen oluşturalım (şimdilik placeholder içerikle):
+/*
 const AllNotifications = () => (
     <View style={styles.tabScreen}>
         <Text style={styles.text}>TÜM BİLDİRİMLER (Kronolojik Akış)</Text>
         <Text style={styles.subText}>(Burada Bildirim Arşivi listesi yer alacak.)</Text>
     </View>
 );
-
+*/
 const MessagingNotifications = () => (
     <View style={styles.tabScreen}>
         <Text style={styles.text}>GELEN MESAJLAR (WhatsApp, SMS, vb.)</Text>
