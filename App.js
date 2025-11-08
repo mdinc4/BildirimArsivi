@@ -1,20 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Bildirim Arşivi</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+// App.js
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import MainTabsScreen from './screens/MainTabsScreen'; // Yeni bileşenimizi import ediyoruz
+
+export default function App() {
+    return (
+        // Tüm navigasyonu kapsayan zorunlu bileşen
+        <NavigationContainer>
+            {/* 3 sekmeli ana ekranımızı yüklüyoruz */}
+            <MainTabsScreen />
+        </NavigationContainer>
+    );
+}
